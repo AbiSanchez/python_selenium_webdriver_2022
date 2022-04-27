@@ -127,3 +127,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Carpetas que no se necesitan o impactan en el proyecto
+.vscode
+drivers
+.idea
