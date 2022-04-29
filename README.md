@@ -5,3 +5,5 @@ Curso de Selenium webdriver
 > 25-Abr-2022 Clase 1: Presentación y introducción de Selenium {instalación de libreria y drivers}
 
 > 26-Abr-2022 Clase 2: Ejercicio "hola mundo"
+
+> 28-Abr-2022 Clase 3: Setup & Teardown | XTML,DOM, XPATH | HERRAMIENTAS DE DESARROLLADOR
