@@ -10,6 +10,6 @@ Curso de Selenium webdriver
 
 > 30-Abr-2022 Clase 4: find_element
 
-> 02-May-2022 Clase 5: Tema
+> 02-May-2022 Clase 5: Tema (falte repasar tema en video)
 
 > 03-May-2022 Clase 6: Espera explicita
