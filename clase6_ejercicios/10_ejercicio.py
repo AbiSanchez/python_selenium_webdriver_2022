@@ -12,7 +12,7 @@ gecko_driver_path = 'drivers/geckodriver'
 url = 'https://demo.seleniumeasy.com/bootstrap-alert-messages-demo.html'
 service = Service(chrome_driver_path)
 driver = webdriver.Chrome(service=service)
-wait = WebDriverWait(driver, 5)
+wait = WebDriverWait(driver, 7)
 
 # Open Web Page
 driver.get(url)
