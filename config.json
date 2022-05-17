@@ -1,7 +1,7 @@
 {
     "url": "https://laboratorio.qaminds.com/",
-    "browser_name": "firefox",
-    "path": "./drivers/geckodriver",
+    "browser_name": "chrome",
+    "path": "./drivers/chromedriver",
     "incognito": false,
     "headless": {
       "enabled": false,
