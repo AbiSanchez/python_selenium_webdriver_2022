@@ -1,0 +1,208 @@
+**************************************
+PYTHON SELENIUM - PROYECTO FINAL
+**************************************
+
+ponerle el nombre del modulo que se esta probando, nombre del test case, prioridad y steps, me falto algo mas?
+
+
+MODULO 1: HOME
+NOMBRE: test_proyecto_final_home
+URL: https://laboratorio.qaminds.com/
+--------------------------------------------
+TEST CASES:
+
+(1) NOMBRE : VALIDACION SUBMENU [test_menu]
+    DESCRIPCION : Se debera permitir la seleccion de los menus y submenus de la pagina
+    STEPS :
+        1. Abrir explorador
+        2. Ir a la URL
+        3. Dar click al menu components -> monitors
+        4. Validar que se muestre el producto Apple Cinema 30"
+
+
+(2) NOMBRE : VALIDACION CARRITO DE COMPRAS [test_car_total]
+    DESCRIPCION : Se debera mostrar el carrio de compras con valor en "0 item(s) - $0.00"
+    STEPS :
+        1. Abrir el explorador
+        2. Ir a la URL
+        3. Identificar el elemento de carrito de comparas y validar que el valor del carrito de comparas sea "0 item(s) - $0.00"
+
+
+(3) NOMBRE : VALIDACION DE MONEDA [test_currency]
+    DESCRIPCION : Validar que se muestre el tipo de moneda ($) USD por default.
+    STEPS :
+        1. Abrir explorador
+        2. Ir a la URL
+        3. Identificar el elemento de currency y validar que se muestre el "$" de USD
+
+
+*****************************************
+
+MODULO 2: LOGIN
+NOMBRE: test_proyecto_final_login
+URL: https://laboratorio.qaminds.com/index.php?route=account/login
+--------------------------------------------
+TEST CASES:
+
+(4) NOMBRE : CUENTA INVALIDA [test_invalid_login]
+    DESCRIPCION : Validar que muestre el mensaje de alarta cuando se realiza un login invalido
+    STEPS :
+        1. Abrir explorador
+        2. Ir a la URL
+        3. Ingresar un usuario y password invalidos
+        4. Dar clic en el boton login
+        5. Validar que el mensaje de alarta se muestra.
+
+
+(5) NOMBRE : OLVIDASTE TU PASSWORD [test_forgot_password]
+    DESCRIPCION : Validar que el link de Forgotten password se le pueda dar clic
+    STEPS :
+        1. Abrir explorador
+        2. Ir a la URL
+        3. Dar clic en el boton Forgotten Password
+        
+
+
+(6) NOMBRE : MENUS [test_menus]
+    DESCRIPCION : Validar que se pueda dar clic a los menus de la derecha
+    STEPS :
+        1. Abrir el explorador
+        2. Ir a la URL
+        3. Dar clic en el boton del menu REGISTER
+        
+
+********************************************
+
+MODULO 3: REGISTER
+NOMBRE: test_proyecto_final_register
+URL: https://laboratorio.qaminds.com/index.php?route=account/register
+--------------------------------------------
+TEST CASES:
+
+(7) NOMBRE : Creación usuario (test_new_user)
+    DESCRIPCION : Crear un nuevo usuario y validar el mensaje de exito "Your Account Has Been Created!"
+    STEPS :
+        1. Abrir el explorador
+        2. Ir a la URL
+        3. Dar clic en el boton My Accunt > REGISTER
+        4. Se muestra el titulo "Register Account"
+        5. Llenar los campos obligatorios.
+        6. Seleccionar el check "Privacy Policy"
+        7. Dar clic en el botón "Continuar"
+        8. Validar que se muestra el mensaje "Your Account Has Been Created!"
+
+
+
+
+(8) NOMBRE : Alerta por no incluir el check Privacy Policy (test_privacy_policy)
+    DESCRIPCION : Validar que se muestra el mensaje de alterta por no seleccionar el check de "Privacy Policy"
+    STEPS :
+        1. Abrir el explorador
+        2. Ir a la URL
+        3. Dar clic en el boton My Accunt > REGISTER
+        4. Se muestra el titulo "Register Account"
+        5. Llenar los campos obligatorios.
+        6. NO seleccionar el check "Privacy Policy"
+        7. Dar clic en el botón "Continuar"
+        8. Validar que se muestra el mensaje de alerta en la parte superior del formulario.
+
+
+(9) NOMBRE :  Mensaje de omisión de información (test_information_failed)
+    DESCRIPCION : Validar el mensaje de alerta por omitir información debajo del input box de cualquiera de los campos requeridos.
+    STEPS :
+        1. Abrir el explorador
+        2. Ir a la URL
+        3. Dar clic en el boton My Accunt > REGISTER
+        4. Se muestra el titulo "Register Account"
+        5. Llenar los campos obligatorios, excpto el campo de email.
+        6. Seleccionar el check "Privacy Policy"
+        7. Dar clic en el botón "Continuar"
+        8. Validar que se muestra el mensaje de alterta debajo del campo email
+
+
+***************************************************
+
+MODULO 4: SEARCH
+NOMBRE: test_proyecto_final_search
+URL: https://laboratorio.qaminds.com/
+--------------------------------------------
+TEST CASES:
+
+(10) NOMBRE : Buscar producto existente (test_existing_product)
+    DESCRIPCION : Validar que se pueda realizar la busqueda que un producto exitente
+    STEPS :
+        1. Abrir el explorador
+        2. Ir a la URL
+        3. Escribir en la barra de busqueda el nombre del producto.
+        4. Dar clic en el boton buscar
+        5. Validar que se muestren los productos
+                
+
+(11) NOMBRE : Buscar un producto no existente (test_nonexisting_product)
+    DESCRIPCION : Validar que se muestre el mensaje de error cuando no exiten los productos
+    STEPS :
+        1. Abrir el explorador
+        2. Ir a la URL
+        3. Escribir en la barra de busqueda el nombre del producto no exitente.
+        4. Dar clic en el boton buscar
+        5. Validar que se muestren el mensaje : There is no product that matches the search criteria.
+
+
+*****************************************************
+
+MODULO 5: PRODUCT
+NOMBRE: test_proyecto_final_product
+URL: https://laboratorio.qaminds.com/index.php?route=product/product&path=57&product_id=49
+--------------------------------------------
+TEST CASES:
+
+(12) NOMBRE : Obtener información del producto [get_product_information]
+    DESCRIPCION : Validar que se muestre la información del producto
+    STEPS :
+        1. Abrir el explorador
+        2. Ir a la URL
+        3. Validar nombre del producto, costo, ex tax, descripción.
+        
+
+(13) NOMBRE : Agregar producto al carrito de compras [test_add_to_cart]
+    DESCRIPCION : Validar que se permita agregar el producto al carrito de compras con el botón "Add to Cart"
+    STEPS :
+        1. Abrir el explorador
+        2. Ir a la URL
+        3. Dar clic en el botón "Add to Cart"
+        4. Se muestra el mensaje de exito : Success: You have added Samsung Galaxy Tab 10.1 to your shopping cart!
+
+
+
+
+
+**********************************************************
+
+MODULO 5: CHECKOUT
+NOMBRE: test_proyecto_final_checkout
+URL: https://laboratorio.qaminds.com/index.php?route=checkout/cart
+--------------------------------------------
+TEST CASES:
+
+(14) NOMBRE : Shopping Cart empty [tes_shopping_cart_empty]
+    DESCRIPCION : Validar que el checkout muestra el mensaje Your shopping cart is empty!
+    STEPS :
+        1. Abrir el explorador
+        2. Ir a la URL
+        3. Dar clic en el botón "checkout"
+        4. Se muestra el titulo : Shopping Cart
+        5. Se muestra el mensaje : Success: Your shopping cart is empty!
+        6. Dar clic en el botón Continuar
+        
+
+
+(15) NOMBRE : Shopping Cart [tes_shopping_cart]
+    DESCRIPCION : Validar la tabla de productos en el CHECKOUT
+    STEPS :
+        1. Abrir el explorador
+        2. Ir a la URL
+        3. Buscar un producto.
+        4. Seleccionar el producto y agregarlo al carrito de compras
+        4. Dar clic en el botón "Checkout"
+        5. Se muestra la tabla de productos
+        6. Validar el nombre del producto
