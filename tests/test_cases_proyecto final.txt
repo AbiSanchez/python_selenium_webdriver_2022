@@ -17,6 +17,7 @@ TEST CASES:
         1. Abrir explorador
         2. Ir a la URL
         3. Dar click al menu components -> monitors
+        4. Seleccionar el producto Apple Cinema 30"
         4. Validar que se muestre el producto Apple Cinema 30"
 
 
