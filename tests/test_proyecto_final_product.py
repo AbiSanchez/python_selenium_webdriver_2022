@@ -22,7 +22,7 @@ class TestFinalProductPage:
 
     def test_add_to_cart(self):
         self.product_page.add_to_cart()
-        assert self.product_page.get_alert_success == 'Success: You have added Samsung Galaxy Tab 10.1 to your shopping cart!'
+        assert  'Success: You have added' in self.product_page.get_alert_success()
 
 
     def teardown_method(self):
