@@ -5,7 +5,7 @@ PYTHON SELENIUM - PROYECTO FINAL
 ponerle el nombre del modulo que se esta probando, nombre del test case, prioridad y steps, me falto algo mas?
 
 
-MODULO 1: HOME
+MODULO 1: HOME --> PASSED
 NOMBRE: test_proyecto_final_home
 URL: https://laboratorio.qaminds.com/
 --------------------------------------------
@@ -39,7 +39,7 @@ TEST CASES:
 
 *****************************************
 
-MODULO 2: LOGIN
+MODULO 2: LOGIN  ---> PASSED
 NOMBRE: test_proyecto_final_login
 URL: https://laboratorio.qaminds.com/index.php?route=account/login
 --------------------------------------------
@@ -85,12 +85,10 @@ TEST CASES:
     STEPS :
         1. Abrir el explorador
         2. Ir a la URL
-        3. Dar clic en el boton My Accunt > REGISTER
-        4. Se muestra el titulo "Register Account"
-        5. Llenar los campos obligatorios.
-        6. Seleccionar el check "Privacy Policy"
-        7. Dar clic en el botón "Continuar"
-        8. Validar que se muestra el mensaje "Your Account Has Been Created!"
+        3. Llenar los campos obligatorios.
+        4. Seleccionar el check "Privacy Policy"
+        5. Dar clic en el botón "Continuar"
+        6. Validar que se muestra el mensaje "Your Account Has Been Created!"
 
 
 
@@ -100,12 +98,10 @@ TEST CASES:
     STEPS :
         1. Abrir el explorador
         2. Ir a la URL
-        3. Dar clic en el boton My Accunt > REGISTER
-        4. Se muestra el titulo "Register Account"
-        5. Llenar los campos obligatorios.
-        6. NO seleccionar el check "Privacy Policy"
-        7. Dar clic en el botón "Continuar"
-        8. Validar que se muestra el mensaje de alerta en la parte superior del formulario.
+        3. Llenar los campos obligatorios.
+        4. NO seleccionar el check "Privacy Policy"
+        5. Dar clic en el botón "Continuar"
+        6. Validar que se muestra el mensaje de alerta en la parte superior del formulario.
 
 
 (9) NOMBRE :  Mensaje de omisión de información (test_information_failed)
@@ -113,17 +109,15 @@ TEST CASES:
     STEPS :
         1. Abrir el explorador
         2. Ir a la URL
-        3. Dar clic en el boton My Accunt > REGISTER
-        4. Se muestra el titulo "Register Account"
-        5. Llenar los campos obligatorios, excpto el campo de email.
-        6. Seleccionar el check "Privacy Policy"
-        7. Dar clic en el botón "Continuar"
-        8. Validar que se muestra el mensaje de alterta debajo del campo email
+        3. Llenar los campos obligatorios, excpto el campo de email.
+        4. Seleccionar el check "Privacy Policy"
+        5. Dar clic en el botón "Continuar"
+        6. Validar que se muestra el mensaje de alterta debajo del campo email
 
 
 ***************************************************
 
-MODULO 4: SEARCH
+MODULO 4: SEARCH  ---> PASSED
 NOMBRE: test_proyecto_final_search
 URL: https://laboratorio.qaminds.com/
 --------------------------------------------
@@ -151,7 +145,7 @@ TEST CASES:
 
 *****************************************************
 
-MODULO 5: PRODUCT
+MODULO 5: PRODUCT --->PASSED
 NOMBRE: test_proyecto_final_product
 URL: https://laboratorio.qaminds.com/index.php?route=product/product&path=57&product_id=49
 --------------------------------------------
@@ -179,31 +173,34 @@ TEST CASES:
 
 **********************************************************
 
-MODULO 5: CHECKOUT
+MODULO 6: CHECKOUT (PASSED)
 NOMBRE: test_proyecto_final_checkout
-URL: https://laboratorio.qaminds.com/index.php?route=checkout/cart
+URL: https://laboratorio.qaminds.com/
 --------------------------------------------
 TEST CASES:
 
-(14) NOMBRE : Shopping Cart empty [tes_shopping_cart_empty]
+(14) NOMBRE : Shopping Cart empty [test_shopping_cart_empty]
     DESCRIPCION : Validar que el checkout muestra el mensaje Your shopping cart is empty!
     STEPS :
         1. Abrir el explorador
         2. Ir a la URL
         3. Dar clic en el botón "checkout"
         4. Se muestra el titulo : Shopping Cart
-        5. Se muestra el mensaje : Success: Your shopping cart is empty!
+        5. Se muestra el mensaje : Your shopping cart is empty!
         6. Dar clic en el botón Continuar
         
 
 
-(15) NOMBRE : Shopping Cart [tes_shopping_cart]
+(15) NOMBRE : Check up formulario [test_form_checkup]
     DESCRIPCION : Validar la tabla de productos en el CHECKOUT
     STEPS :
         1. Abrir el explorador
         2. Ir a la URL
         3. Buscar un producto.
         4. Seleccionar el producto y agregarlo al carrito de compras
-        4. Dar clic en el botón "Checkout"
-        5. Se muestra la tabla de productos
-        6. Validar el nombre del producto
+        5. Dar clic en el botón "Checkout"
+        6. Se muestra formulario de new customer
+        7. En la sección New customer, validar que se encuetre seleccionado el radio button register
+        8. Dar clic en el botón continuar, en la sección New ccustomer
+        9. Se muestra formulario de "Your Personal Details"
+        
