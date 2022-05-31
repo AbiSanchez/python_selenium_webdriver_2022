@@ -21,9 +21,9 @@ class TestFinalRegisterPage:
         4. Seleccionar el check "Privacy Policy"
         5. Dar clic en el botón "Continuar"
         6. Validar que se muestra el mensaje 'Your Account Has Been Created!'"""
-        first_name = 'Abigail'
-        last_name = 'Cruz'
-        email = 'abi@mail.com'
+        first_name = 'Rosalia'
+        last_name = 'Cristofono'
+        email = 'rosa38@mail.com'
         telephone = '5646235689'
         password = 'Prueba01'
         psw_confirm = 'Prueba01'
